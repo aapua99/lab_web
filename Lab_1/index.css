@@ -1,0 +1,38 @@
+h1,h2,h4{
+  font-family: "Essays 1743", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #667;
+    line-height: 1.1;
+    width: 100%;
+    margin: 1.8em 0;
+}
+h5{
+  margin: 30px 30px 50px 30px;
+  width: 100%;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  font-size: 266.7%;
+}
+#show_table{
+  width: 100%;
+  text-align:  center;
+}
+p{
+  line-height: 35px;
+  font-size: 14pt;
+}
+body{
+  width: 50%;
+  margin: auto;
+}
+.leftimg{
+  margin:20px;
+  float: left;
+}
+.rightimg{
+  margin: 20px;
+  float: right;
+}
