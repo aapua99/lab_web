@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+header{
+      background-color: #4caf50;
+      display: flex;
+  margin: 0;
+}
+
+.main_nav{
+  padding-top: 20px;
+  height: 100px;
+  width: 50%;
+
+
+}
+h1{
+  width: 100%;
+  text-align: center;
+}
+#history{
+  width: 60%;
+  margin-left: 20%;
+  font-size: 25px;
+}
+#last_wins{
+  margin-left: 40%;
+}
+
+.main_nav a{
+  font-size: 25px;
+}
+
+
+.main_nav >  ul{
+  width: 500px;
+  list-style: none;
+  margin: 0px;
+  display: flex;;
+  justify-content: left;
+}
+.main_nav li{
+  border: 1px solid white;
+  display: block;
+  background: #2DFF7A;
+  padding: 15px;
+}
+.main_nav a{
+  padding: 15px 30px;
+  margin: 0;
+  justify-content: center;
+  color: black
+}
+
+.main_nav  li:hover{
+  background: white;
+  color: black;
+}
+.main_nav li ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  justify-content: center;
+  min-width: 150px;
+  margin-top: 15px;
+  margin-left: -55px;
+}
+.main_nav li:hover ul{
+  display: block;
+}
+.main_nav li ul a{
+  font-size: 18px;
+}
+#logo{
+  position: absolute;
+  right: 20px;
+height: 100px;
+  padding: 0;
+  width: 150px;
+}
