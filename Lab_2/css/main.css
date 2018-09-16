@@ -94,3 +94,7 @@ footer{
 footer span{
   color: white;
 }
+@keyframes gradient {
+    from {background-color: #2DFF7A;}
+    to {background-color: #d8f300;}
+}
