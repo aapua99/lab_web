@@ -11,11 +11,15 @@ top: 150px;
 
 body{
   background-color: #F6F6F6;
+
 }
 .news-block{
+  justify-content: space-between;
   display: flex;
   width: 70%;
-  margin: 150px auto;
+  margin: 300px  auto 150px auto;
+
+
 }
 .news-item{
   animation-name: show-news-item;
@@ -24,7 +28,7 @@ body{
   width: 20%;
   height: 500px;
   text-align: center;
-  margin-right: 5%;
+
   background-color: white;
 }
 .news-item img{
