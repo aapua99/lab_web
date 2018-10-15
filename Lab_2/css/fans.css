@@ -1,0 +1,25 @@
+.fans-card{
+    margin: 20px auto 0px auto;
+}
+
+.fans-review-date{
+    float: left;
+    width: 20%;
+}
+.fans-review-login{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+.fans-card-first{
+    margin-top:90px;
+}
+.write-review{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-send{
+    margin-top: 100px;
+    height: 50px;
+}

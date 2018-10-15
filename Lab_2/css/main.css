@@ -6,17 +6,15 @@ header{
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #4caf50;
+    background-color: white;
   display: flex;
-  margin: 0;
+  margin: 0 0 50px 0 ;
 }
 
 .main_nav{
   padding-top: 20px;
   height: 100px;
   width: 50%;
-
-
 }
 h1{
   width: 100%;
@@ -46,7 +44,6 @@ h1{
 .main_nav li{
   border: 1px solid white;
   display: block;
-  background: #2DFF7A;
   padding: 15px;
 }
 .main_nav a{
@@ -90,6 +87,9 @@ a{
   text-decoration: none;
 }
 footer{
+    width: 100%;
+   position: fixed;
+    bottom: 0;x
   padding: 15px;
   background-color: #4CAF50;
   text-align: center;

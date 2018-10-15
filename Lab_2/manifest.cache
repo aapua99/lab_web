@@ -1,0 +1,33 @@
+CACHE MANIFEST
+
+
+CACHE:
+index.html
+css/main.css
+css/bootstrap.min.css
+js/jquery.min.js
+js/popper.min.js
+js/bootstrap.min.js
+img/maps.jpg
+img/aprilla_logo.png
+img/aprilla_team.jpg
+img/icon.png
+img/error_icon.jpg
+error.html
+contacts.html
+news.html
+css/news.css
+fans.html
+css/fans.css
+css/contacts.css
+css/admin.css
+
+
+NETWORK:
+news.html 
+fans.html
+
+
+FALLBACK:
+admin.html /error.html
+calendar.html /error.html

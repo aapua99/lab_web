@@ -1,0 +1,8 @@
+.text-contact{
+    margin: 150px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#maps{
+    height: 400px;
+}
