@@ -6,33 +6,21 @@ $(document).ready(function () {
 })
 
 function getData() {
-    if (isOnline()) {
-        if (useLocalStorage) {
-
-            images = JSON.parse(localStorage.getItem("images"));
-            titleNews = JSON.parse(localStorage.getItem("titleNews"));
-            textNews = JSON.parse(localStorage.getItem("textNews"));
-            if (titleNews != null) {
-                for (i in titleNews) {
-                    insertData(images[i], titleNews[i], textNews[i])
-                }
+    fetch("http://localhost:3000/newsdb").then(function (response) {
+            var contentType = response.headers.get("content-type");
+            if (contentType && contentType.includes("application/json")) {
+                return response.json();
             }
-
-        } else {
-            request = indexedDB.open("news", 2);
-            request.onsuccess  = function (event) {
-                var db = event.target.result;
-                var objectStore = db.transaction(["news"], "readwrite").objectStore("news");
-                objectStore.openCursor().onsuccess = function (event) {
-                    var cursor = event.target.result;
-                    if (cursor) {
-                        insertData(cursor.value.image, cursor.value.title, cursor.value.text);
-                        cursor.continue();
-                    }
-                }
+            throw new TypeError("Oops, we haven't got JSON!");
+        })
+        .then(function (json) {
+            for (var i in json) {
+                insertData(json[i].img, json[i].title, json[i].text)
             }
-        }
-    }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 }
 
 function insertData(image, title, text) {
